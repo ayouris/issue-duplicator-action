@@ -38,6 +38,7 @@ export class ApiClient {
       title: originalIssue.title,
       body: originalIssue.body ?? undefined,
       milestone: originalIssue.milestone?.number,
+      type: originalIssue.type,
       labels: originalIssue.labels,
       assignees: originalIssue.assignees.map(({login}) => login)
     })
